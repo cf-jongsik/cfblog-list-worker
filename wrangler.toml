@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "cfblog-list-worker"
 main = "src/index.ts"
-compatibility_date = "2024-10-11"
+compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
 
 # Workers Logs
@@ -19,11 +19,11 @@ binding = "BROWSER"
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#kv-namespaces
 [[kv_namespaces]]
 binding = "cf-blog-list"
-id = "your KV id"
+id = "0b9ea5b8252043b98632e9973d6d8c51"
 
 [[kv_namespaces]]
 binding = "cfblog-summary"
-id = "your kv id"
+id = "1ea0006a787d4c319747c79eba049d2b"
 
 [[queues.consumers]]
 queue = 'cfblog-list-queue'
